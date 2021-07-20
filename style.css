@@ -1,16 +1,8 @@
-/* Regardless of the option that you pick, there are several project requirements that you'll need to meet:
---- flexbox, media queries, mobile-first development, responsive navigation, input types for the forms ---
-Create a page layout using flexbox
-Implement appropriate media queries for responsive design
-Follow a mobile-first development approach
-Use responsive navigation
-Use appropriate input types for the form */
 /* -------  General Styles ------- */
 
 body {
   font-family: "Lato", sans-serif;
-  /* max-width: 1200px; */
-  width: 100%;
+    width: 100%;
 }
 
 h2 {
@@ -71,7 +63,7 @@ header {
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 90px;
+  font-size: 70px;
   color: #fff;
 }
 
@@ -112,10 +104,7 @@ form select,
 form input {
   margin-bottom: 20px;
   width: 180px;
-  /* justify-content: flex-end;
-  align-items: flex-end;
-  align-content: flex-end; */
-}
+  }
 
 form button {
   background-color: #ff385c;
@@ -134,26 +123,12 @@ form button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* align-items: flex-start; */
-}
+  }
 /* ------- About ------- */
 .col {
   flex-direction: column;
   align-items: center;
 }
-
-/* .item {
-  flex: 1;
-  margin: 20px;
-} */
-/* main img {
-  width: 10opx;
-} */
-/* .item {
-  padding: 5px;
-  width: 50px;
-  margin: 5px;
-} */
 
 /* ------- Ideas ------- */
 .col2 {
@@ -174,45 +149,35 @@ footer p {
 }
 
 /* -------  Media Query for Desktop ------- */
-/* When a web browser is larger than 600 pixels,
-   apply these rules. */
+/* rule for width > 600 pixels, */
 /* *** media query for header */
 @media all and (min-width: 600px) {
   header {
     /* Changes the default setting from `block` to `flex`. */
     display: flex;
-    /* Pushes the items (the title and nav) to the far sides of the 
-       browser with space between them. */
     justify-content: space-between;
     align-items: center;
-    /* Adds 0 pixels padding top and bottom, and 30 pixels padding 
-       left and right. */
     padding: 0 30px;
   }
 
   header nav {
-    /*
-      Pushes the navigation container down by 8 pixels to make it
-      present a little better visually within the space.
-    */
+    /* Pushes navigation container down by 8 pixels  */
     margin-top: 8px;
     align-items: center;
   }
-
-  /* Users cannot hover on mobile devices, so that is why you
-     implement this behavior only for larger screens. */
   header nav ul li a:hover {
-    /* Targets the change when a user holds the pointer over the anchor tag 
-       (link) within the list items within the unordered list that 
-       is within the navigation that is within the header. */
     color: #bdbdbd;
+  }
+  .logo {
+    font-family: "Pangolin", cursive;
+    font-size: 50px;
+    color: #fff;
   }
 }
 
-/* form - iphone view rule */
+/* form rule */
 @media all and (min-width: 1200px) {
   .form-container {
-    margin: 2rem 0;
     display: flex;
     justify-content: space-between;
   }
@@ -221,17 +186,13 @@ footer p {
     flex-direction: column;
     margin-right: 40px;
   }
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
-.button-container {
-  border: solid 4px black;
-  display: flex;
-  justify-content: flex-end;
-}
-
-/* *** media query for search button */
-
-/* media query for pictures */
+/* rule for images */
 @media all and (min-width: 600px) {
   .col {
     display: flex;
@@ -243,14 +204,11 @@ footer p {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-
   .col2 {
-    flex: 0 0 calc(35% - 20px);
+    flex: 1 0 calc(35% - 20px);
     margin: 5px;
   }
   .padding {
     margin: 10px;
   }
-  /* .body-container {
-      /* margin: 0 5%; */
 }
