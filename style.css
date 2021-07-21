@@ -178,16 +178,16 @@ footer p {
   .logo {
         font-size: 30px;
         justify-content: center;
-  }
+          }
 }
 
 /* form rule */
-@media all and (min-width: 480px) {
+@media all and (min-width: 1200px) {
   .form-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-  }
+      }
+
   .space-between {
     display: flex;
     flex-direction: column;
