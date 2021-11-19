@@ -9,4 +9,4 @@ Thinkful-bnb is a vacation rental website that allows people to rent out their h
 * HTML
 * Bootstrap 4
 
-Using the above languages and libraries, respectively, allowed for the flawless execution of a responsive webpage that can be used and viewed on desktops and mobile devices.
+Using the above languages and libraries, respectively, allowed for the flawless execution of a responsive webpage that can be used and viewed on desktops and mobile devices, respectively.
