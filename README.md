@@ -9,4 +9,5 @@ Thinkful-bnb is a mock vacation rental website that allows people to rent out th
 Built with:
 * CSS
 * Flexbox
+* Media queries
 * HTML
